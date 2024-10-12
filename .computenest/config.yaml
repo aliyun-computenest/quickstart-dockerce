@@ -11,7 +11,7 @@ Service:
           ArtifactVersion: ${Artifact.EcsImage.ArtifactVersion}
     TemplateConfigs:
       - Name: 选择ECS实例（仅Linux）
-        Url: 'ros_templates/template-select-ecs.yaml'
+        Url: 'ros_templates/template.yaml'
         AllowedRegions:
           - cn-qingdao
           - cn-beijing
