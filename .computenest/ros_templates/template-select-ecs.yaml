@@ -9,8 +9,8 @@ Parameters:
       en: Select Running Linux ECS Instance with public network access enabled
       zh-cn: 选择公网Linux实例
     Description:
-      en: <b><font color='red'><ul><ul>Note:<ol><li>ECS instances can access the public network</li><li>ECS instance is running, wait a while if instance is just started</li><li>Security group opens port 8888</li><li>No other environments such as Apache/Nginx/php/MySQL have been installed, duplicate installation will fail< /li><li>System compatibility recommendation：Centos7.x/Alibaba Cloud Linux2 > Debian10 > Ubuntu 20.04 > Centos8 stream/Alibaba Cloud Linux3 > Ubuntu 18.04</li></ol><ul></font></b>
-      zh-cn: <b><font color='red'>要求:<ol><li>Linux操作系统（Alibaba Cloud Linux/CentOS/Ubuntu/Debian）</li><li>可以访问公网</li><li>ECS实例在运行中，如实例刚启动请稍等片刻</li><li>安全组打开8888端口</li><li>没有装过其它环境如Apache/Nginx/php/MySQL</li></ol><ul></font></b>
+      en: <b><font color='red'>Requirements:<ol><li>Linux operating system (Alibaba Cloud Linux 3.2104 LTS/CentOS 7.7/CentOS 7.8/CentOS 7.9/Ubuntu 20.04/Ubuntu 22.04)</li><li>The ECS instance is running. Please wait for a while if the instance has just started</li><li>Access to the public network</li></ol><ul></font></b>
+      zh-cn: <b><font color='red'>要求:<ol><li>Linux操作系统（Alibaba Cloud Linux 3.2104 LTS/CentOS 7.7/CentOS 7.8/CentOS 7.9/Ubuntu 20.04/Ubuntu 22.04）</li><li>ECS实例在运行中，如实例刚启动请稍等片刻</li><li>可以访问公网</li></ol><ul></font></b>
     AssociationProperty: ALIYUN::ECS::Instance::InstanceId
     AssociationPropertyMetadata:
       OnlyShowSelector: true
