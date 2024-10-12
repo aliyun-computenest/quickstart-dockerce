@@ -94,7 +94,6 @@ ImageBuilder:
       #!/bin/bash
       yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
       yum makecache fast
-      yum install -y git
-      yum -y install docker-ce jq
+      yum install -y git install docker-ce jq
       systemctl enable docker
       systemctl start docker
