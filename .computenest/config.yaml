@@ -3,14 +3,14 @@ Service:
   DeployType: ros
   DeployMetadata:
     ServiceInstanceNameRule:
-      Prefix: docker
+      Prefix: docker-
     SupplierDeployMetadata:
       ArtifactRelation:
         'centos_7_9_x64_20G_alibase_20240403.vhd':
           ArtifactId: ${Artifact.EcsImage.ArtifactId}
           ArtifactVersion: ${Artifact.EcsImage.ArtifactVersion}
     TemplateConfigs:
-      - Name: 选择ECS实例（仅Linux）
+      - Name: 选择ECS实例
         Url: 'ros_templates/template-select-ecs.yaml'
         AllowedRegions:
           - cn-qingdao
