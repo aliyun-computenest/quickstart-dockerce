@@ -139,6 +139,7 @@ ImageBuilder:
       mkdir -p /etc/docker
       tee /etc/docker/daemon.json <<-'EOF'
       {
+          "bip": "10.255.255.1/24",
           "registry-mirrors": [
               "https://mirrors-ssl.aliyuncs.com/"
           ]
@@ -246,4 +247,3 @@ ImageBuilder:
       clean_log
       clean_root_passwd
       clean_cmd_history
-      true
