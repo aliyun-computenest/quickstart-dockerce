@@ -6,11 +6,11 @@ Service:
       Prefix: docker-
     SupplierDeployMetadata:
       ArtifactRelation:
-        'centos_7_9_x64_20G_alibase_20240403.vhd':
+        'centos_7':
           ArtifactId: ${Artifact.EcsImage.ArtifactId}
           ArtifactVersion: ${Artifact.EcsImage.ArtifactVersion}
     TemplateConfigs:
-      - Name: 选择ECS实例
+      - Name: 选择ECS实例（Linux）
         Url: 'ros_templates/template-select-ecs.yaml'
         AllowedRegions:
           - cn-qingdao
@@ -185,7 +185,6 @@ ImageBuilder:
           if [ -d /usr/local/share/aliyun-assist/*/log/ ];then
               rm -rfv  /usr/local/share/aliyun-assist/*/log/*
           fi
-          rm -rf /usr/local/share/aliyun-assist/plugin
           rm -rf  /var/log/ecsgo.log*
 
           rm -rf /tmp/*
@@ -247,3 +246,4 @@ ImageBuilder:
       clean_log
       clean_root_passwd
       clean_cmd_history
+      true
