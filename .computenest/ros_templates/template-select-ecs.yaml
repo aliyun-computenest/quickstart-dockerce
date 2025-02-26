@@ -18,6 +18,7 @@ Parameters:
       Status: Running
       OSType: linux
       NetworkType: vpc
+      PackageName: ACS-Extension-DockerCE-1853370294850618
 Resources:
   Execution:
     Type: 'ALIYUN::OOS::Execution'
